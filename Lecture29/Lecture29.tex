@@ -430,7 +430,7 @@ det(A) &= \Pi_{i=1}^m \lambda_i
 \end{align}
 
 \item If $A_{m\times m}$ has $m$ different eigenvalues, then the associated eigenvectors are all linearly independent.
-\item Spectral decomposition: $A = P\Lambda P$, where $\Lambda = diag(\lambda_1, \dots \lambda_n )$ and $P$ is the matrix whose columns are the corresponding eigenvectors.
+\item Spectral decomposition: $A = P\Lambda P'$, where $\Lambda = diag(\lambda_1, \dots \lambda_n )$ and $P$ is the matrix whose columns are the corresponding eigenvectors.
 \end{itemize}
 
 \end{frame}
@@ -521,7 +521,7 @@ det(A) &= \Pi_{i=1}^m \lambda_i
 \item At the optimum, $\delta$ is the eigenvector corresponding to the eigenvalue $\lambda$ of $\Sigma$. 
 \item Premultiplying by $\delta$ and  remembering that $\delta'\delta = 1$:
 \begin{align}
-\delta \Sigma \delta = \lambda
+\delta' \Sigma \delta = \lambda
 \end{align}
 \footnotesize
 \item In order to maximize $\delta \Sigma \delta $ we must choose $\lambda$ equal to the maximum eigenvalue of $\Sigma$ and $\delta$ is the corresponding eigenvalue.
@@ -599,7 +599,7 @@ orthogonal to the best initial linear combination.
 \medskip
 \item Let $F_j = X \delta_j$ , $j = 1, \dots, K$ be the j-th principal component. It's easy to see that
 \begin{align}
-V (F_j ) = \delta'_j \Sigma \delta_j = p_j P\Lambda P p_j = \lambda_j
+V (F_j ) = \delta'_j \Sigma \delta_j = p_j' P\Lambda P' p_j = \lambda_j
 \end{align}
 
 (the variance of the j-th principal component is the j-th ordered eigenvalue of $\Sigma$).
